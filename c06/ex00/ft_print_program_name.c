@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-int main (int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	int	i;
 
@@ -10,7 +10,7 @@ int main (int argc, char **argv)
 		write(1, &argv[0][i], 1);
 		i++;
 	}
-	write (1, "\n", 1);
+	write(1, "\n", 1);
 	(void)argc;
 	return (0);
 }

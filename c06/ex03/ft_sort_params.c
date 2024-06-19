@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-int ft_strcmp(char *s1, char *s2)
+int	ft_strcmp(char *s1, char *s2)
 {
 	int	i;
 
@@ -9,7 +9,8 @@ int ft_strcmp(char *s1, char *s2)
 		i++;
 	return (s1[i] - s2[i]);
 }
-void	printparams (int argc, char **argv)
+
+void	printparams(int argc, char **argv)
 {
 	int	i;
 	int	j;
@@ -28,8 +29,7 @@ void	printparams (int argc, char **argv)
 	}
 }
 
-
-int main (int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	int	i;
 	int	j;
@@ -41,7 +41,7 @@ int main (int argc, char **argv)
 		j = i + 1;
 		while (j < argc)
 		{
-			if (ft_strcmp(argv[i],  argv[j]) > 0)
+			if (ft_strcmp(argv[i], argv[j]) > 0)
 			{
 				temp = argv[i];
 				argv[i] = argv[j];
@@ -51,6 +51,6 @@ int main (int argc, char **argv)
 		}
 		i++;
 	}
-	printparams (argc, argv);
-
+	printparams(argc, argv);
+	return (0);
 }

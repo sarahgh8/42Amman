@@ -5,10 +5,9 @@ void	ft_sort_int_tab(int *tab, int size)
 	int	i;
 	int	j;
 	int	temp;
-
+	
 	i = 0;
 	j = i + 1;
-
 	while (i < size)
 	{
 		while (j < size)
@@ -22,7 +21,7 @@ void	ft_sort_int_tab(int *tab, int size)
 			j++;
 		}
 		i++;
-		j = i + 1;
+		j = i + i1;
 	}
 }
 /*int main ()
